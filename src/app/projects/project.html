@@ -1,0 +1,43 @@
+<div class="container-fluid">
+		<div class="heading text-center">
+			<h2>Projetos</h2>
+			<img class="dividerline" src="assets/images/sep.png" alt=""><br><br>
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Ordenar por Primeira Coisa</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Ordenar por Segunda Coisa</button>
+  </div>
+   <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Dropdown Categoria</button>
+  </div>
+  <div class="btn-group" role="group">
+    <input type="search" name="" placeholder="Procurar" id="input" class="form-control" value="" required="required" title="">
+  </div>
+</div>
+
+
+			<br>
+			<img class="dividerline" src="assets/images/sep.png" alt="">
+		</div>			
+		<div ng-repeat="project in projects" ng-class="{row : ($index+1) % 3 === 0}">
+			<div class="col-md-4">
+				<div class="papers text-center prjct">
+					<a href="#/"><img ng-src={{project.imgUrl}} alt={{project.name}}><br/>
+					<h4 class="notopmarg nobotmarg">{{project.name}}</h4>
+					</a>
+					<p>
+						{{project.description}}
+					</p>
+					<p><b>{{project.colege}}</b></p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+						   <b>Valor já arrecadado: R$ 5000,00</b><progressbar animate="false" value="5000" max="10000" type="success"><b>50{{dynamic}}%</b></progressbar>
+						   <b>Valor do Projeto: R$ 1000,00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
