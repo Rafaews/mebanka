@@ -6,6 +6,7 @@ angular.module('meBanka')
     	$scope.gotoProjects = function(){
     		 $location.hash('projects');
     		 $anchorScroll();
+    		 $scope.navbarCollapsed = true;
     	}
     	}
   ]);

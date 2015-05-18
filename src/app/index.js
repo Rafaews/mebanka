@@ -1,10 +1,18 @@
 'use strict';
 
-angular.module('meBanka', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
+angular.module('meBanka', [
+   'ngAnimate'
+  ,'ngCookies'
+  ,'ngTouch'
+  ,'ngSanitize'
+  ,'ngResource'
+  ,'ui.router'
+  ,'ui.bootstrap'
+  ,'angularSmoothscroll'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('coming', {
-        url: '/coming',
+        url: '/',
         templateUrl: 'app/comingSoon/comingSoon.html',
         controller: 'comingSoonCtrl'
       });
@@ -16,7 +24,7 @@ angular.module('meBanka', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
         });
         $stateProvider
           .state('home', {
-            url: '/',
+            url: '/d8c87b8501c0cda158521b69a0f15d1c60bfddbb',
             templateUrl: 'app/main/main.html',
             controller: 'MainCtrl',
             // d8c87b8501c0cda158521b69a0f15d1c60bfddbb

@@ -1,0 +1,113 @@
+{
+	 "name" 	     : "Cidade Digital"
+	,"tags" 	     : ["Tecnologia", "Internet"]
+	,"description"   : "Oferecer marketing digital direcional para empresas que atuam no shopping, e wifi gratis aos usuarios que frequentam"
+	,"budget" 	     : ""
+	,"totalValue"    : 10000 
+	,"timeToRewards" : 3
+	,"donations"     : 
+		[ 
+			{
+				 "value"  : 5.000
+				,"amount" : 3
+				,"reward" : "Participação de 1% do lucro de propaganda durante 3 meses;"
+			},
+			{
+				 "value"  : 1.000
+				,"amount" : 10
+				,"reward" : "Propaganda por 1 mês gratis no nosso sistema."
+			},
+			{
+				 "value"  : 500
+				,"amount" : 10
+				,"reward" : "Camiseta customizada"
+			},
+			{
+				 "value"  : 200
+				,"amount" : 15
+				,"reward" : "Caneca personalizada"
+			},
+			{
+				 "value"  : 100
+				,"amount" : 25
+				,"reward" : "Boné personalizado"
+			},
+			{
+				 "value"  : 50
+				,"amount" : 25
+				,"reward" : ""
+			},
+			{
+				 "value"  : 25
+				,"amount" : 30
+				,"reward" : "Bloco de anotações personalizado + caneta"
+			},
+			{
+				 "value"  : 10
+				,"amount" : 45
+				,"reward" : "Chaveiro personalizado"
+			}
+		]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Nome do projeto: "Cidade Digital",
+// Tags: "" (ex: Tecnologia, internet, comida ...)
+// Descrição : "Oferecer marketing digital direcional para empresas que atuam no shopping, e wifi gratis aos usuarios que frequentam",
+// Orçamento :"",
+// Valor Total necessário : R$ ,
+// Tempo de entrega das recompensas : "3 meses" (ex: 2 meses após o financiamento),
+// Doações : [ 
+// 	{
+// 		Valor: R$ 5.000
+// 		Qtd : 3
+// 		Recompensa:"participação de 1% do lucro de propaganda durante 3 meses"
+// 	},
+// 	{
+// 		Valor: R$ 1.000
+// 		Qtd : 10
+// 		Recompensa:"propaganda por 1 mês gratis no nosso sistema"
+// 	},
+// 	{
+// 		Valor: R$ 500
+// 		Qtd : 10
+// 		Recompensa:"camiseta customizada"
+// 	},
+// 	{
+// 		Valor: R$ 200
+// 		Qtd : 15
+// 		Recompensa:"caneca personalizada"
+// 	},
+// 	{
+// 		Valor: R$ 100
+// 		Qtd : 25
+// 		Recompensa:"boné"
+// 	},
+// 	{
+// 		Valor: R$ 50
+// 		Qtd : 25
+// 		Recompensa:" "
+// 	},
+// 	{
+// 		Valor: R$ 25
+// 		Qtd : 30
+// 		Recompensa:"bloco personalizado + caneta"
+// 	},
+// 	{
+// 		Valor: R$ 10
+// 		Qtd : 45
+// 		Recompensa:"chaveiro personalizado"
+// 	},
+	
+// ]
