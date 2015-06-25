@@ -1,25 +1,30 @@
 <div ng-include="'app/nav/navbarTop.html'" ng-controller="MainCtrl"></div>
-<div class="container-fluid">
+<div id="hm" class="container-fluid">
 	<header>
 		<div class="jumbotron text-center">
 			<div class="container-fluid">
-				<iframe width="530" height="315" src="https://www.youtube.com/embed/gfnWeoD49Ok?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video animated flipInX"></iframe>
+				<iframe width="530" height="315" src="https://www.youtube.com/embed/uSJDosxrBIg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video animated flipInX"></iframe>
 				<br>
 
 				<img class="animated swing" src="assets/images/meBanka300px.png" alt="meBanka">
-				<span id="projects"></span>
 			</div>
 		</div>
 	</header>
 </div>
 <section>
+	<div id="ht" ng-include="'app/howTo/howto.html'" ng-controller="ProjecstCtrl"></div>
+</section><hr>
+<section>
 	<div id="p1" ng-include="'app/projects/projects.html'" ng-controller="ProjecstCtrl"></div>	
-</section>
+</section><hr>
+<section>
+	<div id="qs" ng-include="'app/quemSomos/quemSomos.html'" ng-controller="ProjecstCtrl"></div>	
+</section><hr>
 <footer>
 <div class="container-fluid text-center">
 		<p>Desenvolvido por <a href="https://www.facebook.com/rafael.marcelino.9" target="blank" rel="author">Rafael Marcelino</a> - 
 		<a href="https://www.facebook.com/DoctorDyH" target="blank" rel="author">Doctor DyH</a> - 
-		<a href="https://www.facebook.com/profile.php?id=100001155069419" target="blank" rel="author">Fernanda Moreira</a> - 
+		<!-- <a href="https://www.facebook.com/profile.php?id=100001155069419" target="blank" rel="author">Fernanda Moreira</a> -  -->
 		<a href="https://www.facebook.com/brunogabrielguimaraes" target="blank" rel="author">Bruno Gabriel</a></p>
 	</div>
 </footer>

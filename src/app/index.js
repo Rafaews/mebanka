@@ -8,11 +8,12 @@ angular.module('meBanka', [
   ,'ngResource'
   ,'ui.router'
   ,'ui.bootstrap'
-  ,'angularSmoothscroll'])
+  ,'angularSmoothscroll'
+  ,'vModal'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('coming', {
-        url: '/',
+        url: '/teste',
         templateUrl: 'app/comingSoon/comingSoon.html',
         controller: 'comingSoonCtrl'
       });
@@ -24,14 +25,13 @@ angular.module('meBanka', [
         });
         $stateProvider
           .state('home', {
-            url: '/d8c87b8501c0cda158521b69a0f15d1c60bfddbb',
+            url: '/',
             templateUrl: 'app/main/main.html',
             controller: 'MainCtrl',
             // d8c87b8501c0cda158521b69a0f15d1c60bfddbb
-        });
-        
+        });      
 
 
     $urlRouterProvider.otherwise('/');
-  })
+})
 ;

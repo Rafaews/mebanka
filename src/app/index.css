@@ -92,6 +92,11 @@ img {max-width: 100%;}
 .navLink{
 	font-family:'Playball',cursive;
 }
+
+.navLink:hover{
+	background-color: #000000;
+}
+
 .intro {
 	font-family:'Playball',cursive;
 	font-size:60px;
@@ -226,7 +231,6 @@ img#site-title {
 	color:#cc580c;
 	border-bottom: 4px double #eee;
 }
-
 .grid-gallery ul {
 	list-style:none;
 	margin:0;
@@ -446,5 +450,6 @@ span.nav-close:before {
   color: #E8F5F4;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #E8F5F4;
+  color: #000;
 }
+

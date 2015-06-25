@@ -18,7 +18,7 @@
 	<div ng-repeat="project in projects | orderBy: ordem: false | filter: filtro" ng-class="{row : ($index+1) % 3 === 0}">
 		<div class="col-md-4">
 			<div class="papers text-center prjct">
-				<a href="#/"><img ng-src={{project.imgUrl}} alt={{project.name}}><br/>
+				<a href="" ng-click="openModal('projeto')"><img ng-src={{project.imgUrl}} alt={{project.name}}><br/>
 					<h4 class="notopmarg nobotmarg">{{project.name}}</h4>
 				</a>
 				<p>

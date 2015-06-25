@@ -1,29 +1,41 @@
 <nav class="navbar navbar-fixed-top" role="navigation">
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a href="#/"><img ng-src="assets/images/brand.png" ng-class="img-responsive" alt="meBanka"></a>
-      </a>
-    </div>
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="" smooth-scroll-jquery target="hm"><img ng-src="assets/images/brand.png" ng-class="img-responsive" alt="meBanka"></a>
+  </a>
+</div>
 
-    <div class="collapse navbar-collapse" collapse="navbarCollapsed">
-      <ul class="nav navbar-nav">
-      <li><a href="" smooth-scroll-jquery target="p1" class="navLink"><i class="glyphicon glyphicon-paperclip"></i><strong> Projects</strong></a></li>      
-    </ul>
-      <form class="navbar-form navbar-right" role="search" >
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="E-mail">
-			</div>
-			<div class="form-group">
-				<input type="password" class="form-control" placeholder="Senha">
-			</div>
-			<button class="btn btn-info">Logar</button>
-			<button class="btn btn-primary">Cadastrar</button>
-		</form>
-    </div>
+<div class="collapse navbar-collapse" collapse="navbarCollapsed">
+  <ul class="nav navbar-nav">
+    <li class="teste"><a href="" smooth-scroll-jquery target="ht" class="navLink"><i class="glyphicon glyphicon-education"></i><strong> Como Funciona</strong></a></li>  
+
+    <li><a href="" smooth-scroll-jquery target="p1" class="navLink"><i class="fa fa-lightbulb-o"></i><strong> Projetos</strong></a></li>
+
+    <li><a href="" smooth-scroll-jquery target="qs" class="navLink"><i class="fa fa-users"></i><strong> Quem Somos</strong></a></li>
+
+    <li><a href="" ng-click="opemModal('cadProj')" ng-if="usuario.logado" class="navLink"><i class="glyphicon glyphicon-blackboard"></i><strong> Crie seu projeto</strong></a></li> 
+  </ul>
+
+  <ul class="nav navbar-nav navbar-right" ng-if="usuario.logado">
+   <li><a href="" class="navLink" ng-click="opemModal('meusProjetos')" style="padding-left:20px;"><i class="fa fa-user"></i><strong> Olá {{usuario.nome}}</strong></a></li>
+   <li><a href="" class="navLink" ng-click="sair()"  style="padding-left:20px;"><i class="fa fa-sign-out"></i><strong> Sair</strong></a></li>
+  </ul>
+
+  <form class="navbar-form navbar-right" ng-if="!usuario.logado">
+   <div class="form-group">
+    <input type="text" ng-model="usuario.email" class="form-control" placeholder="E-mail">
+  </div>
+  <div class="form-group">
+    <input type="password" ng-model="usuario.senha" class="form-control" placeholder="Senha">
+  </div>
+  <button class="btn btn-info" ng-click="logar()">Logar</button>
+  <button class="btn btn-primary" ng-click="opemModal('cadastro')">Cadastrar</button>
+</form>
+</div>
 </nav>
